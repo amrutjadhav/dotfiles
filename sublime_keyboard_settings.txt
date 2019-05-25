@@ -1,0 +1,10 @@
+[
+  { "keys": ["super+m"], "command": "goto_definition" },
+  { "keys": ["super+]"], "command": "next_view" },
+  { "keys": ["super+["], "command": "prev_view" },
+  { "command": "dired", "keys": ["super+l"],"args": { "immediate": true }},
+  { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["super+enter"], "command": "yard_gen"},
+  { "keys": ["enter"], "command": "dired_select", "args": {"and_close": true}, "context": [{ "key": "selector", "operator": "equal", "operand": "text.dired" }, { "key": "setting.dired_rename_mode", "operand": false } ] },
+]
+
